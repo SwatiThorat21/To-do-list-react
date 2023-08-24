@@ -8,6 +8,7 @@ export default function App() {
     let localNotes = localStorage.getItem("notes");
     if (localNotes === null) return [];
     return JSON.parse(localNotes);
+
   });
 
   useEffect(() => {
@@ -37,6 +38,7 @@ export default function App() {
   function deleteTodo(id) {
     setTodos((prevTodo) => {
       return prevTodo.filter((todo) => todo.id !== id);
+      
     });
   }
   return (

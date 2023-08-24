@@ -1,6 +1,7 @@
 import TodoItem from "./TodoItem";
 
-export default function TodoList({ todos, toggleTodo, deleteTodo }) {
+export default function TodoList(props) {
+  const { todos, toggleTodo, deleteTodo } = props;
   return (
     <ul className="list">
       {todos.length === 0 && "Please add todo"}
