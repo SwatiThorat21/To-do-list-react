@@ -11,7 +11,7 @@ export default function NewTodoForm({ addTodo }) {
   }
 
   return (
-    <form className="new-item-form" onSubmit={handleOnSubmit}>
+    <form className="new-item-form" onSubmit={handleOnSubmit} id="form">
       <div className="form-row">
         <label htmlFor="item">New Item</label>
         <input
